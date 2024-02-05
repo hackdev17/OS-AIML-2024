@@ -6,12 +6,12 @@
 struct directory{
 	char dname[10],fname[10][10];
 	int fcnt;
-} dir[10];
+}dir[10];
 
 int main(){
-	int i,ch,dcnt,k;
+	int i,ch,dcnt=0,k;
 	char f[30],d[30];
-	dcnt=0;
+	
 	printf("\n1. Create Directory\n2. Create File\n3. Delete File\n4. Search File\n5. Display\n6. Exit\n");
 	while(1){
 		printf("\n> ");
@@ -22,7 +22,7 @@ int main(){
 				scanf("%s",dir[dcnt].dname);
 				dir[dcnt].fcnt=0;
 				dcnt++;
-				printf("Directory created");
+				printf("\nDirectory created !");
 				break;
 			case 2:
 				printf("\nEnter name of the directory : ");
@@ -32,11 +32,11 @@ int main(){
 						printf("Enter name of the file : ");
 						scanf("%s",dir[i].fname[dir[i].fcnt]);
 						dir[i].fcnt++;
-						printf("File created");
+						printf("\nFile created !");
 					}
 
 				if(i!=dcnt)
-					printf("Directory %s not found",d);
+					printf("\nDirectory %s not found",d);
 				break;
 			case 3:
 				printf("\nEnter name of the directory : ");
@@ -49,20 +49,20 @@ int main(){
 
 						for(k=0;k<dir[i].fcnt;k++){
 							if(strcmp(f,dir[i].fname[k])==0){
-								printf("File %s is deleted ",f);
+								printf("\nFile %s is deleted ",f);
 								dir[i].fcnt--;
 								strcpy(dir[i].fname[k],dir[i].fname[dir[i].fcnt]);
 								goto jmp;
 							}
 						}
 
-						printf("File %s not found",f);
+						printf("\nFile %s not found",f);
 						goto jmp;
 					}
 
-				printf("Directory %s not found",d);
+				printf("\nDirectory %s not found",d);
 
-			jmp:
+				jmp:
 				break;
 			case 4:
 				printf("\nEnter name of the directory : ");
@@ -70,21 +70,21 @@ int main(){
 
 				for(i=0;i<dcnt;i++)
 					if(strcmp(d,dir[i].dname)==0){
-						printf("Enter the name of the file : ");
+						printf("\nEnter the name of the file : ");
 						scanf("%s",f);
 						for(k=0;k<dir[i].fcnt;k++)
 							if(strcmp(f,dir[i].fname[k])==0){
-								printf("File %s is found ",f);
+								printf("\nFile %s is found ",f);
 								goto jmp1;
 							}
 
-						printf("File %s not found",f);
+						printf("\nFile %s not found",f);
 						goto jmp1;
 					}
 
-				printf("Directory %s not found",d);
+				printf("\nDirectory %s not found",d);
 
-			jmp1:
+				jmp1:
 				break;
 			case 5:
 				if(dcnt==0)
@@ -103,6 +103,4 @@ int main(){
 				exit(0);
 		}
 	}
-	exit(0);
 }
-

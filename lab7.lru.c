@@ -8,10 +8,11 @@ void main(){
 	int index,k,l,flag1=0,flag2=0,pf=0,frsize=3;
 	
 	for(i=0;i<3;i++)
-	fr[i]=-1;
+		fr[i]=-1;
 
 	for(j=0;j<12;j++){
 		flag1=0,flag2=0;
+		
 		for(i=0;i<3;i++)
 			if(fr[i]==p[j]){
 				flag1=1;

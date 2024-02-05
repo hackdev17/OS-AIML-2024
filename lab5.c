@@ -37,8 +37,11 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 					finish[i]=1;
 					found=1;
 					break;
-				} } if(!found)
-			break;
+				}
+			}
+
+			if(!found)
+				break;
 	}
 
 	for(i=0;i<processes;i++)
