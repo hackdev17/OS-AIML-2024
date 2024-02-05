@@ -26,20 +26,18 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 				int canAllocate=1;
 
 				for(j=0;j<resources;j++)
-					if(need[i][j] > work[j]){
+					if(need[i][j]>work[j]){
 						canAllocate=0;
 						break;
 					}
 				
 				if(canAllocate){
 					for(j=0;j<resources;j++)
-						work[j] += allocated[i][j];
+						work[j]+=allocated[i][j];
 					finish[i]=1;
 					found=1;
 					break;
-				}
-			}
-		if(!found)
+				} } if(!found)
 			break;
 	}
 
