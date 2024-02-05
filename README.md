@@ -22,6 +22,7 @@ The Programs here mentioned are the part of the subject "Operating System".
 ./lab7.lru.c
 ./lab8.dld.c
 ./lab8.sld.c
+./LICENSE
 ./makefile
 ./README.md
 ```
