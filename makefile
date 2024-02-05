@@ -11,4 +11,4 @@ ark:
 	@tar -zcvf archive.tgz *.c makefile
 
 cdrom:	ark
-	@mkisofs archive.tgz > DSA-CD.iso
+	@mkisofs archive.tgz > OS-CD.iso
