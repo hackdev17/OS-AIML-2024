@@ -45,13 +45,6 @@ Remove all compiled binaries `*.bin` .
 make clean
 ```
 
-#### Document
-Generates PDF of the C sources as `DSA-Lab.pdf` . <br/>
-You need to have `ghostscript` , `latexmk` and `xelatex` utilities installed.
-```
-make doc
-```
-
 #### Archive
 Generates compressed Tape archive `archive.tgz` .
 ```
