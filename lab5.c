@@ -2,12 +2,12 @@
 
 // Function to check if the system is in a safe state
 int isSafe(int processes,int resources,int max[][resources],int allocated[][resources],int available[]){
-	int need[processes][resources],finish[processes];
+	int need[processes][resources],finish[processes],i,j;
 
-	for(int i=0;i<processes;i++){
+	for(i=0;i<processes;i++){
 		finish[i]=0;
 
-		for(int j=0;j<resources;j++)
+		for(j=0;j<resources;j++)
 			need[i][j]=max[i][j]-allocated[i][j];
 	}
 
@@ -51,7 +51,7 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 }
 
 int main(){
-	int processes,resources;
+	int processes,resources,i,j;
 
 	printf("Enter the number of processes: ");
 	scanf("%d",&processes);
