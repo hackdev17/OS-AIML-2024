@@ -1,4 +1,4 @@
-/*						Program 2 - RR
+/*						Program 2 - SJF
  * Simulate the following CPU scheduling algorithm to bind turnaround time waiting time
  * a) FCFS
  * b) SJF
@@ -40,7 +40,7 @@ int main(){
 		wtavg+=wt[i];
 		tatavg+=tat[i];
 	}
-	
+
 	printf("\nProcess\t Burst time\t Waiting Time\t Turnaround Time\n");
 	for(i=0;i<n;i++)
 		printf("p%d\t %d\t\t %d\t\t %d\n",p[i],bt[i],wt[i],tat[i]);

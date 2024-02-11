@@ -1,4 +1,4 @@
-/*						Program 2 - SJF
+/*						Program 2 - RR
  * Simulate the following CPU scheduling algorithm to bind turnaround time waiting time
  * a) FCFS
  * b) SJF
@@ -29,7 +29,7 @@ int main(){
 	for(i=1;i<n;i++)
 		if(max<bu[i])
 			max=bu[i];
-	
+
 	for(j=0;j<(max/t)+1;j++)
 		for(i=0;i<n;i++)
 			if(bu[i]!=0)
@@ -41,7 +41,7 @@ int main(){
 					bu[i]-=t;
 					temp+=t;
 				}
-	
+
 	for(i=0;i<n;i++){
 		wa[i]=tat[i]-ct[i];
 		att+=tat[i];
