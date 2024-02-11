@@ -11,15 +11,15 @@ int main(){
 	int i,ch;
 	char f[30];
 	dir.fcnt=0;
-	
+
 	printf("\nEnter name of directory : ");
 	scanf("%s",dir.dname);
-	
+
 	printf("\n1. Create File\n2. Delete File\n3. Search File\n4. Display Files\n5. Exit");
 	while(1){
 		printf("\n> ");
 		scanf("%d",&ch);
-		
+
 		switch(ch){
 			case 1:
 				printf("\nEnter the name of the file : ");
@@ -35,7 +35,7 @@ int main(){
 						strcpy(dir.fname[i],dir.fname[dir.fcnt-1]);
 						break;
 					}
-				
+
 				if(i==dir.fcnt)
 					printf("\nFile %s not found !",f);
 				else
@@ -49,7 +49,7 @@ int main(){
 						printf("\nFile %s is found !",f);
 						break;
 					}
-				
+
 				if(i==dir.fcnt)
 					printf("\nFile %s not found !",f);
 				break;

@@ -30,7 +30,7 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 						canAllocate=0;
 						break;
 					}
-				
+
 				if(canAllocate){
 					for(j=0;j<resources;j++)
 						work[j]+=allocated[i][j];

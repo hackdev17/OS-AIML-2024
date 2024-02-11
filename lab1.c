@@ -16,7 +16,7 @@ int main(){
 		fprintf(stderr,"fork() failed !\n");
 		exit(-1);
 	}
-	
+
 	if(child_pid==0){
 		printf("Child process (PID : %d) is running ...\n",getpid());
 		char *args[]={"/bin/ls","-a",NULL};

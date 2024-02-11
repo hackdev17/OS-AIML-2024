@@ -33,7 +33,7 @@ int main(){
 				pri[i]=pri[k];
 				pri[k]=temp;
 			}
-	
+
 	wt[0]=wtavg=0;
 	tat[0]=tatavg=bt[0];
 
@@ -43,7 +43,7 @@ int main(){
 		wtavg+=wt[i];
 		tatavg+=tat[i];
 	}
-	
+
 	printf("\nProcess\t Priority\t Burst time\t Waiting Time\t Turnaround Time\n");
 	for(i=0;i<n;i++)
 		printf("p%d\t %d\t\t %d\t\t %d\t\t %d\n",p[i],pri[i],bt[i],wt[i],tat[i]);

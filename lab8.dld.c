@@ -11,7 +11,7 @@ struct directory{
 int main(){
 	int i,ch,dcnt=0,k;
 	char f[30],d[30];
-	
+
 	printf("\n1. Create Directory\n2. Create File\n3. Delete File\n4. Search File\n5. Display\n6. Exit\n");
 	while(1){
 		printf("\n> ");
