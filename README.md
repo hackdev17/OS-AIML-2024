@@ -5,7 +5,6 @@ The Programs here mentioned are the part of the subject "Operating System".
 
 ```
 .
-├── ./lab10.c
 ├── ./lab1.c
 ├── ./lab2.fcfs.c
 ├── ./lab2.pr.c
@@ -24,6 +23,7 @@ The Programs here mentioned are the part of the subject "Operating System".
 ├── ./lab8.dld.c
 ├── ./lab8.sld.c
 ├── ./lab9.c
+├── ./lab10.c
 ├── ./LICENSE
 ├── ./makefile
 └── ./README.md
