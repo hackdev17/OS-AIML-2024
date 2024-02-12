@@ -32,7 +32,7 @@ int main(){
 
 	for(j=0;j<(max/t)+1;j++)
 		for(i=0;i<n;i++)
-			if(bu[i]!=0)
+			if(bu[i]!=0){
 				if(bu[i]<=t){
 					tat[i]=temp+bu[i];
 					temp+=bu[i];
@@ -41,6 +41,7 @@ int main(){
 					bu[i]-=t;
 					temp+=t;
 				}
+			}
 
 	for(i=0;i<n;i++){
 		wa[i]=tat[i]-ct[i];

@@ -16,8 +16,6 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 	for(i=0;i<resources;i++)
 		work[i]=available[i];
 
-	int safe=0;
-
 	while(1){
 		int found=0;
 
@@ -40,8 +38,8 @@ int isSafe(int processes,int resources,int max[][resources],int allocated[][reso
 				}
 			}
 
-			if(!found)
-				break;
+		if(!found)
+			break;
 	}
 
 	for(i=0;i<processes;i++)
