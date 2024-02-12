@@ -5,26 +5,28 @@ The Programs here mentioned are the part of the subject "Operating System".
 
 ```
 .
-./lab1.c
-./lab2.fcfs.c
-./lab2.pr.ai.c
-./lab2.pr.c
-./lab2.rr.c
-./lab2.sjf.c
-./lab3.c
-./lab4.reader.c
-./lab4.writer.c
-./lab5.c
-./lab6.best.c
-./lab6.first.c
-./lab6.worst.c
-./lab7.fifo.c
-./lab7.lru.c
-./lab8.dld.c
-./lab8.sld.c
-./LICENSE
-./makefile
-./README.md
+├── ./lab10.c
+├── ./lab1.c
+├── ./lab2.fcfs.c
+├── ./lab2.pr.c
+├── ./lab2.rr.c
+├── ./lab2.sjf.c
+├── ./lab3.c
+├── ./lab4.reader.c
+├── ./lab4.writer.c
+├── ./lab5.c
+├── ./lab6.best.c
+├── ./lab6.first.c
+├── ./lab6.worst.c
+├── ./lab7.fifo.c
+├── ./lab7.lru.c
+├── ./lab8.c
+├── ./lab8.dld.c
+├── ./lab8.sld.c
+├── ./lab9.c
+├── ./LICENSE
+├── ./makefile
+└── ./README.md
 ```
 
 ### Compilation
