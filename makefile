@@ -12,3 +12,10 @@ ark:
 
 cdrom:	ark
 	@mkisofs archive.tgz > OS-CD.iso
+
+doc:
+	@latexmk -cd -auxdir=tmp/ -pdf -shell-escape doc/*.tex doc/_minted*/
+	@gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=OS-Lab.pdf -dBATCH doc/{1..5}pdf
+	@rm -rf doc/tmp/ doc/*.pdf
+
+.PHONY: doc
