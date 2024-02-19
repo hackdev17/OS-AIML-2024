@@ -22,7 +22,9 @@ int main(){
 		printf("Parent process (PID : %d) is waiting for the child to complete\n",getpid());
 		wait(&status);
 		if(WIFEXITED(status))
-			printf("Child process (PID : %d) has completed with status %d\n",child_pid,WEXITSTATUS(status));
+			printf("Child process (PID : %d) has completed with status %d\n", \
+				child_pid,WEXITSTATUS(status) \
+			);
 	}
 	return(0);
 }
