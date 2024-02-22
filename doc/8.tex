@@ -3,7 +3,8 @@
 %!TEX program=xelatex
 
 % packages
-\usepackage[a4paper,margin=.5in]{geometry}
+\usepackage{calc}
+\usepackage[a4paper,margin=.5in,paperheight=\paperheight+7in+1em]{geometry}
 \usepackage{minted}
 \usepackage{enumitem}
 \usepackage{verbatim}
@@ -11,8 +12,28 @@
 % prestes
 \pagestyle{empty}
 
-\begin{document}
-	\noindent 1. Develop a C program to implement the process system calls \verb|fork()|, \verb|wait()| to create process and terminate process.
+% command
+\newcommand{\question}[2]{
+	\item [#1.] #2
+}
 
-	\inputminted{c}{lab1.c}
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\answer}[1]{\item[] \inputminted{c}{#1}}
+
+\begin{document}
+	\begin{enumerate}[label=\roman*)]
+		\question{8}{
+			Simulate following File Organization Techniques
+			\begin{enumerate}
+				\item Single level directory
+				\item Two level directory
+			\end{enumerate}
+		}
+
+		\item Single level directory
+		\answer{lab8.sld.c} \newpage
+
+		\item Two level directory
+		\answer{lab8.dld.c}
+	\end{enumerate}
 \end{document}

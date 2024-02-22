@@ -3,7 +3,8 @@
 %!TEX program=xelatex
 
 % packages
-\usepackage[a4paper,margin=.5in]{geometry}
+\usepackage{calc}
+\usepackage[a4paper,margin=.5in,paperheight=\paperheight+8em]{geometry}
 \usepackage{minted}
 \usepackage{enumitem}
 \usepackage{verbatim}
@@ -11,8 +12,20 @@
 % prestes
 \pagestyle{empty}
 
-\begin{document}
-	\noindent 1. Develop a C program to implement the process system calls \verb|fork()|, \verb|wait()| to create process and terminate process.
+% command
+\newcommand{\question}[2]{
+	\item [#1.] #2
+}
 
-	\inputminted{c}{lab1.c}
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\answer}[1]{\item [$\rightarrow$] \inputminted{c}{#1}}
+
+\begin{document}
+	\begin{itemize}
+		\question{10}{
+			Develop a C program to simulate SCAN disk scheduling algorithm
+		}
+
+		\answer{lab10.c}
+	\end{itemize}
 \end{document}

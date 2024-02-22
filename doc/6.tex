@@ -11,8 +11,32 @@
 % prestes
 \pagestyle{empty}
 
-\begin{document}
-	\noindent 1. Develop a C program to implement the process system calls \verb|fork()|, \verb|wait()| to create process and terminate process.
+% command
+\newcommand{\question}[2]{
+	\item [#1.] #2
+}
 
-	\inputminted{c}{lab1.c}
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\answer}[1]{\item[] \inputminted{c}{#1}}
+
+\begin{document}
+	\begin{enumerate}[label=\roman*)]
+		\question{6}{
+			Develop a C program to simulate the following contiguous memory allocation Techniques
+			\begin{enumerate}
+				\item Worst fit
+				\item Best fit
+				\item First fit
+			\end{enumerate}
+		}
+
+		\item Worst fit
+		\answer{lab6.worst.c} \newpage
+
+		\item Best fit
+		\answer{lab6.best.c} \newpage
+
+		\item First fit
+		\answer{lab6.first.c}
+	\end{enumerate}
 \end{document}
