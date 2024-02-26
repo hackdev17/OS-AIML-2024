@@ -1,5 +1,3 @@
-// Develop a C program to simulate SCAN disk scheduling algorithm
-
 #include <stdio.h>
 #include <stdlib.h>
 
