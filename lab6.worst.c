@@ -29,8 +29,7 @@ void main(){
 			// if bf[j] is not allocated
 			if(bf[j]!=1){
 				temp=b[j]-f[i];
-				if(temp>=0)
-					if(highest<temp){
+				if(temp>=0 && highest<temp){
 						ff[i]=j;
 						highest=temp;
 					}

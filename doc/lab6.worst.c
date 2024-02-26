@@ -26,10 +26,10 @@ void main(){
 
 	for(i=1;i<=nf;i++){
 		for(j=1;j<=nb;j++)
+			// if bf[j] is not allocated
 			if(bf[j]!=1){
 				temp=b[j]-f[i];
-				if(temp>=0)
-					if(highest<temp){
+				if(temp>=0 && highest<temp){
 						ff[i]=j;
 						highest=temp;
 					}

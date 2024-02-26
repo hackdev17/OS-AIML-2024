@@ -1,3 +1,8 @@
+/*					Program 1 - CREATE PROCESS
+ * Develop a C program to implement the process system calls fork(), wait() to create process and
+ * terminate process.
+ */
+
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -22,9 +27,7 @@ int main(){
 		printf("Parent process (PID : %d) is waiting for the child to complete\n",getpid());
 		wait(&status);
 		if(WIFEXITED(status))
-			printf("Child process (PID : %d) has completed with status %d\n", \
-				child_pid,WEXITSTATUS(status) \
-			);
+			printf("Child process (PID : %d) has completed with status %d\n",child_pid,WEXITSTATUS(status));
 	}
 	return(0);
 }

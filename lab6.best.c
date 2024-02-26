@@ -26,8 +26,7 @@ void main(){
 		for(j=1;j<=nb;j++)
 			if(barray[j]!=1){
 				temp=b[j]-p[i];
-				if(temp>=0)
-					if(lowest>temp){
+				if(temp>=0 && lowest>temp){
 						parray[i]=j;
 						lowest=temp;
 					}

@@ -1,3 +1,5 @@
+// Develop a C program to simulate the Linked file allocation strategies
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>

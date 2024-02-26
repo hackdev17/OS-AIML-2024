@@ -34,33 +34,40 @@ int main(){
 			}
 
 	int currentTrack=head;
-	printf("Seek Sequence : ");
+	printf("Seek Sequence :\n");
 	if(direction==0){
 		for(i=head;i>=0;i--){
 			printf("%d ",i);
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}
+	
+	printf("\n\n");
 
 		printf("0");
 		seekTime+=currentTrack;
 
 		for(i=1;i<=maxTrack;i++){
-			printf("%d",i);
-			seekTime+=abs(currentTrack-i);
-			currentTrack=i;
-		}
-	}else{
-		for(i=head;i<= maxTrack;i++){
-			printf("%d",i);
+			printf("%d ",i);
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}
 
-		printf("%d",maxTrack);
+		printf("\n\n");
+
+	}else{
+		for(i=head;i<=maxTrack;i++){
+			printf("%d ",i);
+			seekTime+=abs(currentTrack-i);
+			currentTrack=i;
+		}
+		
+		printf("\n\n");
+
+		printf("%d ",maxTrack);
 		seekTime+=abs(currentTrack-maxTrack);
 		for(i=maxTrack-1;i>= 0;i--){
-			printf("%d",i);
+			printf("%d ",i);
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}

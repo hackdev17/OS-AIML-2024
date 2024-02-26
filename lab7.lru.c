@@ -1,22 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-int fr[3];
-void main(){
-	void display();
 
-	int p[12]={2,3,2,1,5,2,4,5,3,2,5,2},i,j,fs[3];
-	int index,k,l,flag1=0,flag2=0,pf=0,frsize=3;
+int fr[3];
+
+void display(){
+	int i;
+	printf("\n");
+	for(i=0;i<3;i++)
+		printf("\t%d",fr[i]);
+}
+
+void main(){
+	int p[12]={2,3,2,1,5,2,4,5,3,2,5,2},fs[3];
+	int index,i,j,k,l,flag1=0,flag2=0,pf=0,frsize=3;
 
 	for(i=0;i<3;i++)
 		fr[i]=-1;
 
 	for(j=0;j<12;j++){
-		flag1=0,flag2=0;
+		flag1=flag2=0;
 
 		for(i=0;i<3;i++)
 			if(fr[i]==p[j]){
-				flag1=1;
-				flag2=1;
+				flag1=flag2=1;
 				break;
 			}
 
@@ -51,9 +57,3 @@ void main(){
 	exit(0);
 }
 
-void display(){
-	int i;
-	printf("\n");
-	for(i=0;i<3;i++)
-		printf("\t%d",fr[i]);
-}
