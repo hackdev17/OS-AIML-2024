@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to check if the system is in a safe state
 int isSafe(int processes,int resources,int max[][resources],int allocated[][resources],int available[]){
 	int need[processes][resources],finish[processes],i,j;
 

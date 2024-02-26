@@ -1,11 +1,3 @@
-/*						Program 2 - FCFS
- * Simulate the following CPU scheduling algorithm to bind turnaround time waiting time
- * a) FCFS
- * b) SJF
- * c) Round Robin
- * d) Priority
- */
-
 #include<stdio.h>
 #include<stdlib.h>
 

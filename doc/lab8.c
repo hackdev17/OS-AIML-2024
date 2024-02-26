@@ -1,7 +1,3 @@
-/* 8. Simulate following File Organization Techniques :
- * a) Single level directory b)Two level directory
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
