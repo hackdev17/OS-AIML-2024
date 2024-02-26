@@ -39,10 +39,7 @@ int main(){
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}
-	
-	printf("\n\n");
-
-		printf("0 ");
+		printf("\n\n0 ");
 		seekTime+=currentTrack;
 
 		for(i=1;i<=maxTrack;i++){
@@ -50,19 +47,14 @@ int main(){
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}
-
 		printf("\n\n");
-
 	}else{
 		for(i=head;i<=maxTrack;i++){
 			printf("%d ",i);
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
 		}
-		
-		printf("\n\n");
-
-		printf("%d ",maxTrack);
+		printf("\n\n%d ",maxTrack);
 		seekTime+=abs(currentTrack-maxTrack);
 		for(i=maxTrack-1;i>=0;i--){
 			printf("%d ",i);
