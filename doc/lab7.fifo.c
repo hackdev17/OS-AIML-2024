@@ -42,7 +42,6 @@ void main(){
 			if(top>=frsize)
 			top=0;
 		}
-
 		display();
 	}
 
