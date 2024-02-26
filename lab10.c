@@ -66,7 +66,7 @@ int main(){
 
 		printf("%d ",maxTrack);
 		seekTime+=abs(currentTrack-maxTrack);
-		for(i=maxTrack-1;i>= 0;i--){
+		for(i=maxTrack-1;i>=0;i--){
 			printf("%d ",i);
 			seekTime+=abs(currentTrack-i);
 			currentTrack=i;
