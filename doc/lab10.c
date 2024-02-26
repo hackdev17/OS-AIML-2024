@@ -44,7 +44,7 @@ int main(){
 	
 	printf("\n\n");
 
-		printf("0");
+		printf("0 ");
 		seekTime+=currentTrack;
 
 		for(i=1;i<=maxTrack;i++){
